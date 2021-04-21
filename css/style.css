@@ -214,9 +214,11 @@ body {
     transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
     right: 0;
 }
+
 .burger span{
     top: 20px;
 }
+
 .burger span:after{
     content: "";
     bottom: -15px;
@@ -231,6 +233,7 @@ body {
     transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
     background: #000;
 }
+
 .burger span.active:after{
     content: "";
     bottom: 0;
@@ -350,7 +353,7 @@ body {
 }
 
 .bakberdi {
-    background: url(../img/students/bakberdi.jpg);
+    background: url(../img/bakberdi.jpg);
 }
 
 .whiteroad {
@@ -474,18 +477,10 @@ body {
 .our-projects h2:nth-child(3) {
     font-weight: 900;
     margin-top: 200px;
-    margin-bottom: 0;
 }
 
-.our-projects .main-site {
-    max-width: 800px;
-    width: 100%;
-    margin-top: 30px;
-    transition: 0.3s;
-}
-
-.our-projects .main-site:hover {
-    filter: brightness(0.8);
+.gallery {
+    display: block;
 }
 
 .our-projects .projects__link img {
@@ -494,10 +489,6 @@ body {
 
 .our-projects .projects__link img:hover {
     filter: brightness(0.7);
-}
-
-.gallery {
-    display: block;
 }
 
 .project-images {
@@ -571,6 +562,15 @@ body {
 
 .socialtools i {
     font-size: 35px;
+}
+
+.footer__contacts {
+    color: #fff;
+    font-weight: 500;
+}
+
+.footer__contacts a {
+    color: #fff9;
 }
 
 /* /footer */
