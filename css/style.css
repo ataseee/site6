@@ -496,6 +496,10 @@ body {
     filter: brightness(0.7);
 }
 
+.gallery {
+    display: block;
+}
+
 .project-images {
     margin-top: 40px;
     display: flex;
