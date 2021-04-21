@@ -31,8 +31,6 @@ body {
     transition: 0.7s;
     z-index: 2;
     position: relative;
-    border-right: 1px solid #000;
-    border-left: 1px solid #000;
 }
 
 /* /common */
@@ -281,6 +279,8 @@ body {
 
 .wrapper.active {
     transform: translateX(-300px);
+    background: rgb(0, 0, 0, 0.5);
+    filter: brightness(0.5);
 }
 
 /* /intro */
@@ -350,7 +350,7 @@ body {
 }
 
 .bakberdi {
-    background: url(../img/students/bakberdi.jpg);
+    background: url(../img/bakberdi.jpg);
 }
 
 .whiteroad {
@@ -462,38 +462,48 @@ body {
     color: rgb(0, 0, 0);
 }
 
-.section-our-projects .our-projects {
+.our-projects {
     text-align: center;
 }
 
-.section-our-projects .our-projects h2 {
+.our-projects h2 {
     font-weight: 900;
     margin-bottom: 50px;
 }
 
-.section-our-projects .our-projects h2:nth-child(3) {
+.our-projects h2:nth-child(3) {
     font-weight: 900;
     margin-top: 200px;
     margin-bottom: 0;
 }
 
-.section-our-projects .our-projects .main-site {
+.our-projects .main-site {
     max-width: 800px;
     width: 100%;
     margin-top: 30px;
     transition: 0.3s;
 }
 
-.section-our-projects .our-projects .main-site:hover {
+.our-projects .main-site:hover {
     filter: brightness(0.8);
 }
 
-.gallery {
-    display: flex;
+.our-projects .projects__link img {
+    transition: 0.3s;
+}
+
+.our-projects .projects__link img:hover {
+    filter: brightness(0.7);
 }
 
 .project-images {
     margin-top: 40px;
+    display: flex;
+}
+
+.project-images:last-child {
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .project-images img{
@@ -585,7 +595,7 @@ body {
         margin: 0 auto;
     }
 
-    .gallery {
+    .project-images {
         display: block;
     }
 
@@ -609,21 +619,4 @@ body {
         font-size: 14px;
     }
 
-}
-
-#hellopreloader>p {
-    display:none;
-}
-
-#hellopreloader_preload {
-    display: block;
-    position: fixed;
-    z-index: 99999;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #fff url(../img/video/pacman.svg) center no-repeat;
-    background-position: center;
-    background-size:90px;
 }
